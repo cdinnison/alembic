@@ -10,6 +10,9 @@ collections:
 
 '
     feature_image: https://unsplash.it/1300/400?image=1067
+  tools:
+    title: Tools
+    output: true
   uploads:
     title: Uploads
     output: true
