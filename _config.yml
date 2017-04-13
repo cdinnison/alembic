@@ -1,14 +1,34 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
+---
+title: Noon Room
+timezone: America/Los_Angeles
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: My thoughts and ideas
+    feature_text: 'Welcome to the blog
 
-# 1. Files excluded from Jekyll builds
+'
+    feature_image: https://unsplash.it/1300/400?image=1067
+  tools:
+    title: Tools
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+    image: "/assets/placeholder-social.png"
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    image: "/assets/placeholder-social.png"
 exclude:
 - README.md
 - screenshot.png
@@ -18,8 +38,6 @@ exclude:
 - Gemfile.lock
 - demo/*
 - alembic-jekyll-theme.gemspec
-
-# 2. Installed Gems
 gems:
 - jekyll-sitemap
 - jekyll-mentions
@@ -28,13 +46,11 @@ gems:
 - jekyll-redirect-from
 - jekyll-feed
 - jemoji
-
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+paginate: 2
+paginate_path: blog/page:num
+jekyll-mentions: https://twitter.com
 twitter:
-  username: noonpacific # jekyll-seo-tag > Owners twitter username
+username: noonpacific # jekyll-seo-tag > Owners twitter username
 author: Noon Pacific # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Noon Pacific # jekyll-seo-tag > real name
@@ -96,7 +112,6 @@ navigation_header:
   Home: /
   About: /about/
 
-
 navigation_footer:
   Created by Noon Pacific: https://noonpacific.com
 
@@ -115,4 +130,3 @@ sharing_links:
   Reddit: "#FF4500"
   Hacker News: "#ff6600"
   Designer News: "#2D72D9"
-  Email: ""

@@ -1,5 +1,6 @@
 ---
 title: Categories
 layout: categories
-excerpt: "Category index"
+excerpt: Category index
 ---
+
