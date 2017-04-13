@@ -2,4 +2,70 @@
 title: The Noon Room
 ---
 
-<div>HELLO WORLD</div>
+<h3>Our Picks</h3>
+<ul class="list  list--posts">
+     {% for page in site.tools limit: 4 %}
+          {% if page.tags contains 'featured' %}
+               <li class="item  item--post">
+                    <article class="article  article--post">
+
+                         <h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
+                         {% include post-meta.html %}
+                         {{ page.excerpt | markdownify | truncatewords: 60 }}
+
+                    </article>
+               </li>
+          {% endif %}
+     {% endfor %}
+</ul>
+
+<h3>Distribution</h3>
+<ul class="list  list--posts">
+     {% for page in site.tools limit: 4 %}
+          {% if page.categories contains 'Distribution' %}
+               <li class="item  item--post">
+                    <article class="article  article--post">
+
+                         <h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
+                         {% include post-meta.html %}
+                         {{ page.excerpt | markdownify | truncatewords: 60 }}
+
+                    </article>
+               </li>
+          {% endif %}
+     {% endfor %}
+</ul>
+
+<h3>Promotion</h3>
+<ul class="list  list--posts">
+     {% for page in site.tools limit: 4 %}
+          {% if page.categories contains 'Promotion' %}
+               <li class="item  item--post">
+                    <article class="article  article--post">
+
+                         <h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
+                         {% include post-meta.html %}
+                         {{ page.excerpt | markdownify | truncatewords: 60 }}
+
+                    </article>
+               </li>
+          {% endif %}
+     {% endfor %}
+</ul>
+
+<h3>Creation</h3>
+<ul class="list  list--posts">
+     {% for page in site.tools limit: 4 %}
+          {% if page.categories contains 'Creation' %}
+               <li class="item  item--post">
+                    <article class="article  article--post">
+
+                         <h4><a href="{{ page.url }}" title="Post - {{ page.title }}">{{ page.title }}</a></h4>
+                         {% include post-meta.html %}
+                         {{ page.excerpt | markdownify | truncatewords: 60 }}
+
+                    </article>
+               </li>
+          {% endif %}
+     {% endfor %}
+</ul>

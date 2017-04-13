@@ -2,14 +2,6 @@
 title: Noon Room
 timezone: America/Los_Angeles
 collections:
-  posts:
-    title: Posts
-    output: true
-    description: My thoughts and ideas
-    feature_text: 'Welcome to the blog
-
-'
-    feature_image: https://unsplash.it/1300/400?image=1067
   tools:
     title: Tools
     output: true
