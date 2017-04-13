@@ -1,6 +1,6 @@
 ---
-title: Alembic
-timezone: Europe/London
+title: Noon Room
+timezone: America/Los_Angeles
 collections:
   posts:
     title: Posts
@@ -50,10 +50,10 @@ paginate: 2
 paginate_path: blog/page:num
 jekyll-mentions: https://twitter.com
 twitter:
-  username: DavidDarnes
-author: DavidDarnes
+  username: noonpacific
+author: Noon Pacific
 social:
-  name: David Darnes
+  name: Noon Pacific
   links:
   - https://twitter.com/DavidDarnes
   - https://www.facebook.com/daviddarnes
@@ -98,4 +98,4 @@ sharing_links:
   Reddit: "#FF4500"
   Hacker News: "#ff6600"
   Designer News: "#2D72D9"
-  Email: ''
+  Email: 
